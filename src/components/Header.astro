@@ -1,0 +1,53 @@
+---
+---
+<div id="top-navigation">
+  <section class="logo">
+    <a href="/"><p>Logo</p></a>
+  </section>
+  <section class="link-items">
+    <a href="/photos"><p>Photos</p></a>
+    <a href="/catalog"><p>Catalog</p></a>
+    <a href="/about"><p>About</p></a>
+    <a href="/press"><p>Press</p></a>
+    <a href="/resources"><p>Resources</p></a>
+  </section>
+</div>
+
+<style scoped>
+  #top-navigation {
+    background: white;
+    padding: 16px;
+
+    display: flex;
+    flex-direction: row;
+  }
+
+  a {
+    color: #222;
+    font-family: "lato";
+  }
+  a:visited {
+    color: #222;
+  }
+  a:hover {
+    color: deeppink;
+  }
+
+  .logo {
+    flex: 1;
+  }
+
+  .logo > a {
+    display: inline-block;
+  }
+
+  .link-items {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-self: right;
+    gap: 24px;
+  }
+</style>
+

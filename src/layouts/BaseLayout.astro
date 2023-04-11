@@ -1,0 +1,99 @@
+---
+import Header from "../components/Header.astro";
+import "@fontsource/shrikhand"
+
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+    <Header />
+    <article class="page-content">
+      <slot />
+    </article>
+	</body>
+</html>
+
+<style is:global>
+	:root {
+		--accent: 124, 58, 237;
+		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+	}
+
+  /* RESET */
+  body, p, h1, h2, h3, h4, h5, h6, li, ul, ol, a {
+    margin: 0;
+  }
+
+  /* Base Layout Styles */
+  h1, h2 {
+    font-family: "shrikhand", cursive;
+    letter-spacing: 1px;
+  }
+
+  .page-content {
+    padding: 16px;
+    background: #fffbfc;
+  }
+
+  .page-content ul {
+    padding-inline-start: 24px; 
+  }
+
+  /*
+  .page-content h1, .page-content h2 {
+    text-align: center;
+  }
+ */
+
+  .page-content h1 {
+    margin: 32px 32px 32px 0;
+    font-size: 3rem;
+  }
+
+  .page-content h2 {
+    margin: 64px 32px 32px 0;
+    text-align: center;
+
+    font-family: "lato";
+    font-weight: 200;
+  }
+
+  .page-content h3 {
+    padding-bottom: 8px;
+  }
+
+  .page-content p {
+    margin-bottom: 16px;
+    text-align: justify;
+  }
+
+  .page-content .sf-block {
+    padding-bottom: 24px;
+  }
+
+  .intro h1 {
+    visibility: hidden;
+    height: 0;
+  }
+  .intro img {
+    height: 70px;
+  }
+  .intro p {
+    margin-top: 16px;
+  }
+
+</style>

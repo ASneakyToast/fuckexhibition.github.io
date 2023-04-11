@@ -1,0 +1,159 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+import ImageData from "../components/data/fuck_exhibition-data-0410.json";
+let images = ImageData["@graph"];
+
+let exhibitionImages = images.filter( item => {
+  return item.tag.includes( "exhibition" );
+});
+
+let primaryArtworkPhotos = images.filter( item => {
+  return ( item.tag.includes( "artwork" ) && item.tag.includes( "primary image" ) );
+});
+
+let openingPhotos = images.filter( item => {
+  return ( item.tag.includes( "opening reception" ) );
+});
+
+---
+<BaseLayout title="F*CK | Photos">
+  <section class="intro">
+    <h1>Photos</h1>
+    <img src="/graphics/photos-text_graphic.png" />
+  </section>
+
+  <section id="Exhibition">
+    <h2>Exhibition</h2>
+    <!-- Horizontal grid of photos, 3 rows mobile, 2 tablet + -->
+    <!-- Clicking on it opens in lightbox with simple text that says "Installiation view" -->
+
+    <section class="images">
+      {
+        Object.keys( exhibitionImages ).map(( key, i ) => {
+          return (
+            <img src={ "/images/" + exhibitionImages[ key ].photo[0].filename } />
+          )
+        })
+      }
+    </section>
+    <img class="right-icon" src="/graphics/right_arrow-text_graphic.png" />
+  </section>
+
+  <section id="Artwork">
+    <h2>Artwork</h2>
+    <!-- Each artworks photos need to be bunched together -->
+
+    <article id="artwork-title">
+      <!-- all images -->
+      <!-- Ok to do it artlogic style with one card photo then multiple in lightbox -->
+        <section class="images">
+          {
+            Object.keys( primaryArtworkPhotos ).map(( key, i ) => {
+              return (
+                <img src={ "/images/" + primaryArtworkPhotos[ key ].photo[0].filename } />
+              )
+            })
+          }
+        </section>
+    </article>
+  </section>
+
+  <section id="Reception">
+    <h2>Reception</h2>
+    <!-- Clicking on it opens in lightbox with simple text that says "opening reciption image" or maybe no capitons at all -->
+      <section class="images">
+        {
+          Object.keys( openingPhotos ).map(( key, i ) => {
+            return (
+              <img src={ "/images/" + openingPhotos[ key ].photo[0].filename } />
+            )
+          })
+        }
+      </section>
+  </section>
+</BaseLayout>
+
+<style scoped>
+  #Exhibition {
+    position: relative;
+  }
+  #Exhibition .images {
+    height: 82vh;
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    margin-right: -35px;
+  }
+  #Exhibition .images img {
+    max-height: 80vh;
+    margin-right: 16px;
+  }
+  #Exhibition .right-icon {
+    width: 64px;
+    position: absolute;
+    right: 32px;
+    bottom: 32px;
+  }
+  /*
+  #Exhibition .images {
+    height: 52vh;
+    width: 100%;
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 50% 50%;
+    gap: 16px;
+
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+  #Exhibition .images img {
+    max-height: 100%;
+  }
+  */
+
+  #Artwork .images {
+    /*
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    column-gap: 16px;
+    row-gap: 32px;
+    justify-items: center;
+     */
+    text-align: center;
+  }
+  #Artwork .images img {
+    display: inline-block;
+    max-width: 200px;
+    max-height: 80vh;
+    padding: 0 16px 16px 0;
+  }
+
+  #Reception .images {
+    columns: 3;
+    gap: 8px;
+  }
+  #Reception .images img {
+    max-width: 100%;
+  }
+</style>
+
+<script>
+import ImageData from "../components/data/fuck_exhibition-data-0410.json";
+console.log( ImageData["@graph"] );
+console.log( ImageData["@graph"][8].tag );
+console.log( ImageData["@graph"][8].photo[0].filename );
+
+let images = ImageData["@graph"];
+
+let openingPhotos = images.filter( item => {
+  // console.log( item.tag.includes( "artwork" ));
+  console.log( item.tag );
+  return ( item.tag.includes( "opening reception" ) );
+});
+
+console.log( primaryArtworkPhotos.length );
+
+</script>
