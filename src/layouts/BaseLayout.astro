@@ -39,14 +39,27 @@ const { title } = Astro.props;
   }
 
   /* Base Layout Styles */
+  body {
+    background-color: #fffbfc;
+  }
+
   h1, h2 {
     font-family: "shrikhand", cursive;
     letter-spacing: 1px;
   }
 
+  h3, h4, p {
+    font-family: "lato";
+  }
+
+  h4, p {
+    font-weight: lighter;
+  }
+
   .page-content {
     padding: 16px;
-    background: #fffbfc;
+    max-width: 768px;
+    margin: auto;
   }
 
   .page-content ul {
@@ -73,7 +86,12 @@ const { title } = Astro.props;
   }
 
   .page-content h3 {
+    font-family: "lato";
     padding-bottom: 8px;
+  }
+
+  .page-content h4 {
+    font-family: "lato";
   }
 
   .page-content p {
@@ -94,6 +112,79 @@ const { title } = Astro.props;
   }
   .intro p {
     margin-top: 16px;
+  }
+
+  .artwork-quickview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    padding: 32px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+  }
+  .artwork-quickview:hover {
+    cursor: pointer;
+  }
+  .artwork-quickview .primary-image {
+    max-height: 100%;
+  }
+  .artwork-quickview aside {
+    align-self: end;
+  }
+
+  .reception-quickview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    padding: 32px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .reception-quickview:hover {
+    cursor: pointer;
+  }
+  .reception-quickview img {
+    max-height: 100%;
+    object-fit: contain;
+    margin-left: 16px;
+  }
+  .reception-quickview p {
+    display: inline-block;
+    margin-left: 16px;
+  }
+
+  .exhibition-quickview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    padding: 32px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .exhibition-quickview:hover {
+    cursor: pointer;
+  }
+  .exhibition-quickview img {
+    max-height: 100%;
+    object-fit: contain;
+    margin-left: 16px;
+  }
+  .exhibition-quickview p {
+    display: inline-block;
+    margin-left: 16px;
   }
 
 </style>

@@ -1,10 +1,12 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 
+// import ArtworkQuickview from "../components/ArtworkQuickview.astro";
+
 import ImageData from "../components/data/fuck_exhibition-data-0410.json";
 let images = ImageData["@graph"];
 
-let exhibitionImages = images.filter( item => {
+let exhibitionPhotos = images.filter( item => {
   return item.tag.includes( "exhibition" );
 });
 
@@ -23,6 +25,8 @@ let openingPhotos = images.filter( item => {
     <img src="/graphics/photos-text_graphic.png" />
   </section>
 
+  <!-- <ArtworkQuickview title="WahWWah!" /> -->
+
   <section id="Exhibition">
     <h2>Exhibition</h2>
     <!-- Horizontal grid of photos, 3 rows mobile, 2 tablet + -->
@@ -30,9 +34,9 @@ let openingPhotos = images.filter( item => {
 
     <section class="images">
       {
-        Object.keys( exhibitionImages ).map(( key, i ) => {
+        Object.keys( exhibitionPhotos ).map(( key, i ) => {
           return (
-            <img src={ "/images/" + exhibitionImages[ key ].photo[0].filename } />
+            <img src={ "/images/" + exhibitionPhotos[ key ].photo[0].filename } />
           )
         })
       }
@@ -75,6 +79,9 @@ let openingPhotos = images.filter( item => {
 </BaseLayout>
 
 <style scoped>
+  :global(.page-content)  {
+    max-width: 100%;
+  }
   #Exhibition {
     position: relative;
   }
@@ -89,11 +96,32 @@ let openingPhotos = images.filter( item => {
     max-height: 80vh;
     margin-right: 16px;
   }
+  #Exhibition .images img:hover {
+    cursor: pointer;
+  }
+
+  @keyframes arrowmove {
+    0% {
+      right: 32px;
+    }
+    100% {
+      right: 24px;
+    }
+  }
   #Exhibition .right-icon {
     width: 64px;
     position: absolute;
     right: 32px;
     bottom: 32px;
+
+    animation-name: arrowmove;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+  }
+  #Exhibition .right-icon:hover {
+    right: 24px;
   }
   /*
   #Exhibition .images {
@@ -130,6 +158,9 @@ let openingPhotos = images.filter( item => {
     max-height: 80vh;
     padding: 0 16px 16px 0;
   }
+  #Artwork .images img:hover {
+    cursor: pointer;
+  }
 
   #Reception .images {
     columns: 3;
@@ -138,22 +169,100 @@ let openingPhotos = images.filter( item => {
   #Reception .images img {
     max-width: 100%;
   }
+  #Reception .images img:hover {
+    cursor: pointer;
+  }
+
 </style>
 
 <script>
-import ImageData from "../components/data/fuck_exhibition-data-0410.json";
-console.log( ImageData["@graph"] );
-console.log( ImageData["@graph"][8].tag );
-console.log( ImageData["@graph"][8].photo[0].filename );
+  import ImageData from "../components/data/fuck_exhibition-data-0410.json";
+  let images = ImageData["@graph"];
 
-let images = ImageData["@graph"];
+  /* ARTWORK QUICKVIEW OPEN */
+  function openArtworkQuickview( srcElement ) {
 
-let openingPhotos = images.filter( item => {
-  // console.log( item.tag.includes( "artwork" ));
-  console.log( item.tag );
-  return ( item.tag.includes( "opening reception" ) );
-});
+    const artworkData = images.find( image => {
+      return srcElement.target.attributes.src.value.includes( image.title );
+    });
+    
+    let artworkName = artworkData.tag.filter( tag => {
+      return ![ "artwork", "auto erotica", "chrissa", "primary image" ].includes( tag );
+    });
 
-console.log( primaryArtworkPhotos.length );
+    let artistName = artworkData.tag.filter( tag => {
+      return ![ "artwork", "primary image", "safeword", "superfam", "fliers", "drummer", "flowers bloom" ].includes( tag );
+    });
 
+    var artworkSrc = String.raw`${ artworkData.photo[0].filename }`;
+    artworkSrc = artworkSrc.replace(/\s+/g, "%20"); //format string to change whitespaces
+
+    const artworkQuickviewElement = document.createElement( "div" );
+    artworkQuickviewElement.classList.add( "artwork-quickview" );
+    artworkQuickviewElement.innerHTML = `
+      <img class="primary-image" src=${ "/images/" + artworkSrc } />
+      <aside>
+        <h4>${ artistName }</h4>
+        <h3>${ artworkName }</h3>
+      </aside>
+    `;
+    artworkQuickviewElement.addEventListener( "click", () => {
+      artworkQuickviewElement.remove();
+    });
+    document.body.appendChild( artworkQuickviewElement );
+  }
+
+  /* ARTWORK QUICKVIEW ATTACH */
+  const artworkQuickviewImages = document.querySelectorAll( "#Artwork .images img" );
+  artworkQuickviewImages.forEach(( image ) => {
+    image.addEventListener( "click", () => {
+      openArtworkQuickview( event );
+    });
+  });
+
+  /* RECEIPTION QUICKVIEW OPEN */
+  function openReceptionQuickview( srcElement ) {
+
+    const receptionQuickviewElement = document.createElement( "div" );
+    receptionQuickviewElement.classList.add( "reception-quickview" );
+    receptionQuickviewElement.innerHTML = `
+      <img src=${ srcElement.target.attributes.src.value } />
+      <p>Opening reception photo</p>
+    `
+    receptionQuickviewElement.addEventListener( "click", () => {
+      receptionQuickviewElement.remove();
+    });
+    document.body.appendChild( receptionQuickviewElement );
+  }
+
+  /* RECEPTION QUICKVIEW ATTACH */
+  const receptionQuickviewImages = document.querySelectorAll( "#Reception .images img" );
+  receptionQuickviewImages.forEach(( image ) => {
+    image.addEventListener( "click", () => {
+      openReceptionQuickview( event );
+    });
+  });
+
+  /* EXHIBITION QUICKVIEW OPEN */
+  function openExhibitionQuickview( srcElement ) {
+
+    const exhibitionQuickviewElement = document.createElement( "div" );
+    exhibitionQuickviewElement.classList.add( "exhibition-quickview" );
+    exhibitionQuickviewElement.innerHTML = `
+      <img src=${ srcElement.target.attributes.src.value } />
+      <p>Exhibition photo</p>
+    `
+    exhibitionQuickviewElement.addEventListener( "click", () => {
+      exhibitionQuickviewElement.remove();
+    });
+    document.body.appendChild( exhibitionQuickviewElement );
+  }
+
+  /* EXHIBITION QUICKVIEW ATTACH */
+  const exhibitionQuickviewImages = document.querySelectorAll( "#Exhibition .images img" );
+  exhibitionQuickviewImages.forEach(( image ) => {
+    image.addEventListener( "click", () => {
+      openExhibitionQuickview( event );
+    });
+  });
 </script>
