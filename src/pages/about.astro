@@ -18,6 +18,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   <section id="Artists">
     <h2>Artists</h2>
 
+    <section class="photos">
+      <article>
+        <img src="/chrissa-photo.jpg" alt="A photo of Chrissa Chorvat" />
+        <p>Chrissa Chovart (she/they)</p>
+      </article>
+      <article>
+        <img src="/autoerotica-photo.jpg" alt="A photo of the storefront of Auto Erotica."</img>
+        <p>Auto Erotica</p>
+      </article>
+    </section>
+
     <article class="sf-block">
       <h3>Chrissa Chorvat (she/they)</h3>
       <p>is an interdisciplinary artist and MFA student working across disciplines exploring the abject nature of sex, gender, and sexuality through a critical lens. She is a pioneer in the medium of borosilicate glass, developing foundational techniques. Her transition from glass to fine arts generated compositions with a tone combining absurdist humor, celebration, and subjective honesty. Chorvat seeks to physically embody the acts, topics, and sensations often considered taboo in cishetero-normative society. Her thematic foci shift between pain, pleasure, absurdity, and the gray areas in-between, producing a holistic discourse on sex, gender, and sexuality as abject subjects.</p>
@@ -54,5 +65,15 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   #Exhibition h2 {
     visibility: hidden;
     height: 0;
+  }
+
+  #Artists .photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  #Artists .photos img {
+    max-width: 100%;
   }
 </style>
