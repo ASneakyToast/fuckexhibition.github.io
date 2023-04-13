@@ -2,14 +2,16 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 <BaseLayout title="Press | Resources">
+
   <section class="intro">
     <h1>Resources</h1>
     <img src="/graphics/resources-text_graphic.png" />
-    <p>San Francisco has one of the richest histories of queer activism, which is a legacy we are lucky to inherit. To ground our exhibition within our immediate community, we felt it was important to highlight local, San Francisco-based LGBTQ+ resources and institutions. Spanning queer-run art galleries focusing in queer and underrepresented artists to grassroots development organizations catering to the queer and trans AAPI communities, we hope to spotlight a brief but diverse group of organizations within our own communities. 
-</p>
   </section>
 
-  <h2>Local Organizations</h2>
+  <section class="sf-block">
+    <h2>Local Organizations</h2>
+    <p>San Francisco has one of the richest histories of queer activism, which is a legacy we are lucky to inherit. To ground our exhibition within our immediate community, we felt it was important to highlight local, San Francisco-based LGBTQ+ resources and institutions. Spanning queer-run art galleries focusing in queer and underrepresented artists to grassroots development organizations catering to the queer and trans AAPI communities, we hope to spotlight a brief but diverse group of organizations within our own communities.</p>
+  </section>
   <ul class="resource-list">
     <li>
       <h3><a href="">Aguilas:</a></h3>
@@ -43,10 +45,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 </BaseLayout>
 
 <style scoped>
-  h2 {
-    text-align: left !important;
-  }
-
   .resource-list li {
     margin-bottom: 24px;
   }
