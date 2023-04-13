@@ -6,24 +6,27 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 <BaseLayout title="F*CK | Catalog">
   <section class="intro">
     <h1>Catalog</h1>
-    <img src="/graphics/catalog-text_graphic.jpg" />
+    <img src="/graphics/catalog-text_graphic.png" />
   </section>
 
   <section class="contents-preview">
     <h2>Contents</h2>
     <article>
-      <h3>Exhibition Title</h3>
-      <h4>Artist Name</h4>
+        <h3><i>"Closer Encounters"</i></h3>
+        <h4><i>by Samantha Hiura</i></h4>
     </article>
     <article>
-      <h3>Exhibition Title</h3>
-      <h4>Artist Name</h4>
+      <h3><i>"Unmentionables"</i></h3>
+      <h4><i>by Sloane Holzer</i></h4>
     </article>
   </section>
 
-  <a href="/catalog.jpf" download="Fuck_Exhibition-Catalog-2023">
-    <button>Download</button>
-  </a>
+  <section class="download">
+    <a href="/catalog.pdf" download="Fuck_Exhibition-Catalog-2023.pdf">
+      <button>Download now</button>
+    </a>
+    <p><i>Samantha Hiura & Sloane Holzer. F*CK!: Exhibition Catalog. April 2023.</i></p>
+  </section>
 </BaseLayout>
 
 <style scoped>
@@ -34,7 +37,28 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     margin-bottom: 32px;
   }
 
-  button {
-    margin-top: 32px;
+  .download {
+    margin-top: 64px;
+  }
+  .download p {
+    margin-top: 8px;
+    font-size: .8rem;
+  }
+  .download button {
+    color: black;
+    background-color: pink;
+    padding: 8px 16px;
+    border-radius: 32px;
+    border: 1px solid lightpink;
+    filter: drop-shadow( -2px 4px 0 rgba(0,0,0,1));
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: all 200ms;
+  }
+  .download button:hover {
+    color: white;
+    background-color: deeppink;
+    border: 1px solid deeppink;
+    filter: drop-shadow( -3px 6px 0 rgba(0,0,0,1));
   }
 </style>
