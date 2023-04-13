@@ -2,7 +2,9 @@
 ---
 <div id="top-navigation">
   <section class="logo">
-    <a href="/"><p>Logo</p></a>
+    <a href="/">
+      <img src="/graphics/fuck-logo.jpg" alt="FUCK"/>
+    </a>
   </section>
   <section class="link-items">
     <a href="/photos"><p>Photos</p></a>
@@ -41,12 +43,16 @@
     display: inline-block;
   }
 
+  .logo img {
+    height: 30px;
+  }
+
   .link-items {
     flex: 1;
     display: flex;
     flex-direction: row;
     justify-content: right;
-    align-self: right;
+    align-items: center;
     gap: 24px;
   }
 </style>
