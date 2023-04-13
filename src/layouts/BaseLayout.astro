@@ -48,11 +48,11 @@ const { title } = Astro.props;
     letter-spacing: 1px;
   }
 
-  h3, h4, p {
+  h3, h4, h5, p {
     font-family: "lato";
   }
 
-  h4, p {
+  h4, h5, p {
     font-weight: lighter;
   }
 
@@ -139,6 +139,15 @@ const { title } = Astro.props;
   }
   .artwork-quickview aside {
     align-self: end;
+  }
+  .artwork-quickview h2 {
+    margin-bottom: 16px;
+  }
+  .artwork-quickview h3, h4, h5 {
+    margin-bottom: 8px;
+  }
+  .artwork-quickview p {
+    margin-top: 24px;
   }
 
   /* Artwork Quickview, Mobile-Tablet */

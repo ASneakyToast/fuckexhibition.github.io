@@ -192,13 +192,54 @@ let openingPhotos = images.filter( item => {
     const artworkData = images.find( image => {
       return srcElement.target.attributes.src.value.includes( image.title );
     });
-    
+
     let artworkName = artworkData.tag.filter( tag => {
       return ![ "artwork", "auto erotica", "chrissa", "primary image" ].includes( tag );
     });
     let artistName = artworkData.tag.filter( tag => {
       return ![ "artwork", "primary image", "safeword", "superfam", "fliers", "drummer", "flowers bloom" ].includes( tag );
     });
+
+    /* set extra description... */
+    let artworkMetadata = document.createElement( "aside" );
+    if ( artistName == "chrissa" && artworkName == "safeword" ) {
+      artworkMetadata.innerHTML = `
+        <h2>Chrissa Chorvat</h2>
+        <h3>Safe Word</h3>
+        <h4>16”x10”, aluminum, rubber, PVC, glass.</h4>
+        <h5>photo credit: ${ artworkData.creator }</h5>
+      `;
+    } else if ( artistName == "chrissa" && artworkName == "superfam" ) {
+      artworkMetadata.innerHTML = `
+        <h2>Chrissa Chovart</h2>
+        <h3>SUPERFAM</h3>
+        <h4>(The Truth Is Stranger Than Fiction 1 of 3), 50”x6’, printed panel.</h4>
+        <h5>photo credit: ${ artworkData.creator }</h5>
+      `;
+    } else if ( artistName == "chrissa" && artworkName == "flowers bloom" ) {
+      artworkMetadata.innerHTML = `
+        <h2>Chrissa Chovart</h2>
+        <h3>The Flowers Bloom Where you Have Placed Them, and the Lady Smiles. Just Like Mom</h3>
+        <h4>27” x 15”x10”, PVC, steel, vibrators, rubber.</h4>
+        <h5>photo credit: ${ artworkData.creator }</h5>
+      `;
+    } else if ( artistName == "auto erotica" && artworkName == "fliers" ) {
+      artworkMetadata.innerHTML = `
+        <h2>Auto Erotica</h2>
+        <h3>Various fliers and posters</h3>
+        <h4>Collected and provided by Auto Erotica, varying dates and sizes.</h4>
+        <h5>photo credit: ${ artworkData.creator }</h5>
+      `;
+    } else if ( artistName == "auto erotica" && artworkName == "drummer" ) {
+      artworkMetadata.innerHTML = `
+        <h2>Auto Erotica</h2>
+        <h3>Bulldog Baths (facsimile poster)</h3>
+        <h4>Printed by But Whole Press, provided by Auto Erotica, (2022), 11” x 17”, paper, ink.</h4>
+        <h5>photo credit: ${ artworkData.creator }</h5>
+        <p>Drummer was a magazine based in San Francisco focusing on queer subculture, running from 1975-1999 and recently relaunched in 2019. It specifically explored and celebrated leather, rubber wear, and BDSM culture, techniques, writing, and products. It was culturally significant for spreading mainstream awareness to these subcultures, and challenged ideas of masculinity in the LGBTQ+ community.</p>
+      `;
+    }
+    console.log( artworkMetadata );
 
     var artworkSrc = String.raw`${ artworkData.photo[0].filename }`;
     artworkSrc = artworkSrc.replace(/\s+/g, "%20"); //format string to change whitespaces
@@ -207,11 +248,8 @@ let openingPhotos = images.filter( item => {
     artworkQuickviewElement.classList.add( "artwork-quickview" );
     artworkQuickviewElement.innerHTML = `
       <img class="primary-image" src=${ "/images/" + artworkSrc } />
-      <aside>
-        <h4>${ artistName }</h4>
-        <h3>${ artworkName }</h3>
-      </aside>
     `;
+    artworkQuickviewElement.appendChild( artworkMetadata );
     artworkQuickviewElement.addEventListener( "click", () => {
       artworkQuickviewElement.remove();
     });
@@ -241,7 +279,7 @@ let openingPhotos = images.filter( item => {
     receptionQuickviewElement.classList.add( "reception-quickview" );
     receptionQuickviewElement.innerHTML = `
       <img src=${ srcElement.target.attributes.src.value } />
-      <p>Opening reception photo | <i>credit: ${photoCreds}</p>
+      <p>Opening reception photo | <i>photo credit: ${photoCreds}</p>
     `
     receptionQuickviewElement.addEventListener( "click", () => {
       receptionQuickviewElement.remove();
@@ -276,7 +314,7 @@ let openingPhotos = images.filter( item => {
     exhibitionQuickviewElement.classList.add( "exhibition-quickview" );
     exhibitionQuickviewElement.innerHTML = `
       <img src=${ exhibitionSrc } />
-      <p>Exhibition photo | <i>credit: ${photoCreds }</p>
+      <p>Exhibition photo | <i>photo credit: ${photoCreds }</p>
     `
     exhibitionQuickviewElement.addEventListener( "click", () => {
       exhibitionQuickviewElement.remove();
