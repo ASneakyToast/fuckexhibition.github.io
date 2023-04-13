@@ -12,10 +12,18 @@
     <a href="/about"><p>About</p></a>
     <a href="/press"><p>Press</p></a>
     <a href="/resources"><p>Resources</p></a>
+    <aside class="hamburger-menu">
+      <a href="/"><p>Menu</p></a>
+    </aside>
   </section>
+  <!--
+  <section class="hamburger-menu">
+  </section>
+  -->
 </div>
 
 <style scoped>
+
   #top-navigation {
     background: white;
     padding: 16px;
@@ -27,6 +35,7 @@
   a {
     color: #222;
     font-family: "lato";
+    font-weight: bolder;
   }
   a:visited {
     color: #222;
@@ -55,5 +64,26 @@
     align-items: center;
     gap: 24px;
   }
+  @media only screen and (max-width: 678px) {
+    .link-items > a {
+      display: none;
+    }
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  /* Tablet and larger */
+  @media only screen and (max-width: 678px) {
+    .hamburger-menu {
+      display: inline-block;
+    }
+  }
+
 </style>
 
+<script>
+
+
+</script>
