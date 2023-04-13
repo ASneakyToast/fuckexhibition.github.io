@@ -183,7 +183,7 @@ let openingPhotos = images.filter( item => {
 </style>
 
 <script>
-  import ImageData from "../components/data/fuck_exhibition-data-0410.json";
+  import ImageData from "../components/data/fuck_exhibition-data-0417.json";
   let images = ImageData["@graph"];
 
   /* ARTWORK QUICKVIEW OPEN */
@@ -229,11 +229,19 @@ let openingPhotos = images.filter( item => {
   /* RECEIPTION QUICKVIEW OPEN */
   function openReceptionQuickview( srcElement ) {
 
+    /* Lookup image data from images object */
+    const receptionData = images.find( image => {
+      return srcElement.target.attributes.src.value.includes( image.title );
+    });
+    console.log( receptionData );
+
+    let photoCreds = receptionData.creator;
+
     const receptionQuickviewElement = document.createElement( "div" );
     receptionQuickviewElement.classList.add( "reception-quickview" );
     receptionQuickviewElement.innerHTML = `
       <img src=${ srcElement.target.attributes.src.value } />
-      <p>Opening reception photo</p>
+      <p>Opening reception photo | <i>credit: ${photoCreds}</p>
     `
     receptionQuickviewElement.addEventListener( "click", () => {
       receptionQuickviewElement.remove();
@@ -252,13 +260,23 @@ let openingPhotos = images.filter( item => {
   /* EXHIBITION QUICKVIEW OPEN */
   function openExhibitionQuickview( srcElement ) {
 
+    console.log( srcElement );
+
+    /* Lookup image data from images object */
+    const exhibitionData = images.find( image => {
+      return srcElement.target.attributes.src.value.includes( image.title );
+    });
+    console.log( exhibitionData );
+
+    let photoCreds = exhibitionData.creator;
+
     const exhibitionSrc = srcElement.target.attributes.src.value.replace(/\s+/g, "%20"); //format string to change whitespaces
 
     const exhibitionQuickviewElement = document.createElement( "div" );
     exhibitionQuickviewElement.classList.add( "exhibition-quickview" );
     exhibitionQuickviewElement.innerHTML = `
       <img src=${ exhibitionSrc } />
-      <p>Exhibition photo</p>
+      <p>Exhibition photo | <i>credit: ${photoCreds }</p>
     `
     exhibitionQuickviewElement.addEventListener( "click", () => {
       exhibitionQuickviewElement.remove();

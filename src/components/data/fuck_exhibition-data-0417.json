@@ -1,0 +1,1634 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@vocab": "https://tropy.org/v1/tropy#",
+    "template": {
+      "@type": "@id"
+    },
+    "photo": {
+      "@id": "https://tropy.org/v1/tropy#photo",
+      "@container": "@list"
+    },
+    "note": {
+      "@id": "https://tropy.org/v1/tropy#note",
+      "@container": "@list"
+    },
+    "selection": {
+      "@id": "https://tropy.org/v1/tropy#selection",
+      "@container": "@list"
+    },
+    "title": "http://purl.org/dc/elements/1.1/title",
+    "creator": "http://purl.org/dc/elements/1.1/creator",
+    "date": {
+      "@id": "http://purl.org/dc/elements/1.1/date",
+      "@type": "https://tropy.org/v1/tropy#date"
+    }
+  },
+  "@graph": [
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "openingfck_021",
+      "creator": "Joel Lithgow",
+      "tag": [
+        "meet the curators",
+        "about"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "d749838d0375f14a2aaeaa917159191a",
+          "color": "rgb(8,8,8,1)",
+          "density": null,
+          "filename": "openingfck_021.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/d749838d0375f14a2aaeaa917159191a.jpg",
+          "protocol": "file",
+          "size": 16794414,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 4000,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 6000,
+          "title": "openingfck_021",
+          "date": 1678469198000
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "openingfck_011",
+      "creator": "Joel Lithgow",
+      "tag": [
+        "opening reception"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "5ad87dcfeea1d066e5bb222297261f26",
+          "color": "rgb(232,216,200,1)",
+          "density": null,
+          "filename": "openingfck_011.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/5ad87dcfeea1d066e5bb222297261f26.jpg",
+          "protocol": "file",
+          "size": 17731512,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 4000,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 6000,
+          "title": "openingfck_011",
+          "date": 1678464179000
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "openingfck_010",
+      "creator": "Joel Lithgow",
+      "tag": [
+        "opening reception"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "7642476f189cb2f6cb1449fd43c894d1",
+          "color": "rgb(216,200,184,1)",
+          "density": null,
+          "filename": "openingfck_010.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/7642476f189cb2f6cb1449fd43c894d1.jpg",
+          "protocol": "file",
+          "size": 14164489,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 5507,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 4000,
+          "title": "openingfck_010",
+          "date": 1678464123000
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "openingfck_009",
+      "creator": "Joel Lithgow",
+      "tag": [
+        "opening reception"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "acadd7f0e2d35a8cb403b09261f89140",
+          "color": "rgb(8,8,8,1)",
+          "density": null,
+          "filename": "openingfck_009.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/acadd7f0e2d35a8cb403b09261f89140.jpg",
+          "protocol": "file",
+          "size": 15460506,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 4000,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 6000,
+          "title": "openingfck_009",
+          "date": 1678464095000
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "openingfck_008",
+      "creator": "Joel Lithgow",
+      "tag": [
+        "opening reception"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "8910d9736268eb82acd7a8872af683c2",
+          "color": "rgb(232,216,200,1)",
+          "density": null,
+          "filename": "openingfck_008.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/8910d9736268eb82acd7a8872af683c2.jpg",
+          "protocol": "file",
+          "size": 15485844,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 4000,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 6000,
+          "title": "openingfck_008",
+          "date": 1678464036000
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "openingfck_007",
+      "creator": "Joel Lithgow",
+      "tag": [
+        "opening reception"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "1e419ef4b1fd57e36ce425322fce9c5c",
+          "color": "rgb(8,8,8,1)",
+          "density": null,
+          "filename": "openingfck_007.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/1e419ef4b1fd57e36ce425322fce9c5c.jpg",
+          "protocol": "file",
+          "size": 15706127,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 4000,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 6000,
+          "title": "openingfck_007",
+          "date": 1678463124000
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "openingfck_006",
+      "creator": "Joel Lithgow",
+      "tag": [
+        "opening reception"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "a23eea2c9f189b8288cc2f4e51bc6e27",
+          "color": "rgb(248,232,216,1)",
+          "density": null,
+          "filename": "openingfck_006.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/a23eea2c9f189b8288cc2f4e51bc6e27.jpg",
+          "protocol": "file",
+          "size": 16023398,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 4000,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 6000,
+          "title": "openingfck_006",
+          "date": 1678462584000
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "openingfck_005",
+      "creator": "Joel Lithgow",
+      "tag": [
+        "opening reception"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "512b93a4ce4ec3348a3951864106a829",
+          "color": "rgb(8,8,8,1)",
+          "density": null,
+          "filename": "openingfck_005.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/512b93a4ce4ec3348a3951864106a829.jpg",
+          "protocol": "file",
+          "size": 13093870,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 4000,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 6000,
+          "title": "openingfck_005",
+          "date": 1678462548000
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "openingfck_004",
+      "creator": "Joel Lithgow",
+      "tag": [
+        "opening reception"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "685e17d1adc5e3b539d52800ea20a90a",
+          "color": "rgb(8,8,8,1)",
+          "density": null,
+          "filename": "openingfck_004.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/685e17d1adc5e3b539d52800ea20a90a.jpg",
+          "protocol": "file",
+          "size": 13183723,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 4000,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 6000,
+          "title": "openingfck_004",
+          "date": 1678462534000
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "openingfck_003",
+      "creator": "Joel Lithgow",
+      "tag": [
+        "opening reception"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "e7e8856aa1e8eaffb45c97d434183a11",
+          "color": "rgb(216,184,168,1)",
+          "density": null,
+          "filename": "openingfck_003.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/e7e8856aa1e8eaffb45c97d434183a11.jpg",
+          "protocol": "file",
+          "size": 13339028,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 5763,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 4000,
+          "title": "openingfck_003",
+          "date": 1678462135000
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "large_digital_jpg-E_E_Playspace install_SP23-05",
+      "creator": "Nicholas Lea Bruno",
+      "tag": [
+        "exhibition"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "ceb0e424085bad4307a60f9ed82c171d",
+          "color": "rgb(216,200,216,1)",
+          "density": null,
+          "filename": "large_digital_jpg-E_E_Playspace install_SP23-05.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/ceb0e424085bad4307a60f9ed82c171d.jpg",
+          "protocol": "file",
+          "size": 1522099,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 2705,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 4058,
+          "date": "2023-04-04T04:14:59.469Z",
+          "title": "large_digital_jpg-E_E_Playspace install_SP23-05"
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "large_digital_jpg-E_E_Playspace install_SP23-04",
+      "creator": "Nicholas Lea Bruno",
+      "tag": [
+        "artwork",
+        "chrissa",
+        "primary image",
+        "flowers bloom"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "134f7693ba24257d1df019ee55a8f03a",
+          "color": "rgb(200,200,200,1)",
+          "density": null,
+          "filename": "large_digital_jpg-E_E_Playspace install_SP23-04.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/134f7693ba24257d1df019ee55a8f03a.jpg",
+          "protocol": "file",
+          "size": 720651,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 4200,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 2800,
+          "date": "2023-04-04T04:14:59.469Z",
+          "title": "large_digital_jpg-E_E_Playspace install_SP23-04"
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "large_digital_jpg-E_E_Playspace install_SP23-02",
+      "creator": "Nicholas Lea Bruno",
+      "tag": [
+        "artwork",
+        "chrissa",
+        "safeword"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "4a39684afd0a6f984f1a75912f9d81da",
+          "color": "rgb(232,232,232,1)",
+          "density": null,
+          "filename": "large_digital_jpg-E_E_Playspace install_SP23-02.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/4a39684afd0a6f984f1a75912f9d81da.jpg",
+          "protocol": "file",
+          "size": 496623,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 4026,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 2684,
+          "title": "large_digital_jpg-E_E_Playspace install_SP23-02",
+          "date": "2023-04-04T04:14:59.469Z"
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "fck_049",
+      "creator": "Megan Kelly",
+      "tag": [
+        "exhibition"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "e7745d38bfe0173b958b1142a9776fa6",
+          "color": "rgb(216,216,216,1)",
+          "density": null,
+          "filename": "fck_049.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/e7745d38bfe0173b958b1142a9776fa6.jpg",
+          "protocol": "file",
+          "size": 13771890,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 4000,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 6000,
+          "title": "fck_049",
+          "date": 1678252613000
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "fck_044",
+      "creator": "Megan Kelly",
+      "tag": [
+        "exhibition"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "dd3bd2a1942375639f8c3eca5a2b96ea",
+          "color": "rgb(232,216,216,1)",
+          "density": null,
+          "filename": "fck_044.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/dd3bd2a1942375639f8c3eca5a2b96ea.jpg",
+          "protocol": "file",
+          "size": 14719243,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 4000,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 6000,
+          "title": "fck_044",
+          "date": 1678252463000
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "fck_042",
+      "creator": "Megan Kelly",
+      "tag": [
+        "exhibition"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "7b7c87ff172cd31e1da2507e7f2989d4",
+          "color": "rgb(216,200,200,1)",
+          "density": null,
+          "filename": "fck_042.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/7b7c87ff172cd31e1da2507e7f2989d4.jpg",
+          "protocol": "file",
+          "size": 14923975,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 6000,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 4000,
+          "title": "fck_042",
+          "date": 1678252404000
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "fck_040",
+      "creator": "Megan Kelly",
+      "tag": [
+        "exhibition"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "4f2db374e7653de16d4931a201fd9d95",
+          "color": "rgb(248,248,248,1)",
+          "density": null,
+          "filename": "fck_040.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/4f2db374e7653de16d4931a201fd9d95.jpg",
+          "protocol": "file",
+          "size": 13013223,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 4000,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 6000,
+          "title": "fck_040",
+          "date": 1678252310000
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "fck_036",
+      "creator": "Megan Kelly",
+      "tag": [
+        "exhibition"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "95cb69eabdcb691c34686815d119bab3",
+          "color": "rgb(184,184,184,1)",
+          "density": null,
+          "filename": "fck_036.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/95cb69eabdcb691c34686815d119bab3.jpg",
+          "protocol": "file",
+          "size": 15431533,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 6000,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 4000,
+          "title": "fck_036",
+          "date": 1678252157000
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "fck_034",
+      "creator": "Megan Kelly",
+      "tag": [
+        "exhibition"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "c6374174256db9cf54740afd6c6d7964",
+          "color": "rgb(200,200,200,1)",
+          "density": null,
+          "filename": "fck_034.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/c6374174256db9cf54740afd6c6d7964.jpg",
+          "protocol": "file",
+          "size": 12540164,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 5105,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 3890,
+          "title": "fck_034",
+          "date": 1678252030000
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "fck_033",
+      "creator": "Megan Kelly",
+      "tag": [
+        "exhibition"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "cb1044b789f17058ef025a376c2c8d92",
+          "color": "rgb(232,216,216,1)",
+          "density": null,
+          "filename": "fck_033.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/cb1044b789f17058ef025a376c2c8d92.jpg",
+          "protocol": "file",
+          "size": 11339863,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 5487,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 3658,
+          "title": "fck_033",
+          "date": 1678251997000
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "fck_032",
+      "creator": "Megan Kelly",
+      "tag": [
+        "exhibition"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "63f7b62084a7cb480e771c0479612732",
+          "color": "rgb(216,216,216,1)",
+          "density": null,
+          "filename": "fck_032.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/63f7b62084a7cb480e771c0479612732.jpg",
+          "protocol": "file",
+          "size": 12665792,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 4000,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 6000,
+          "title": "fck_032",
+          "date": 1678251984000
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "fck_029",
+      "creator": "Megan Kelly",
+      "tag": [
+        "exhibition"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "97514a33273500eb6f6ddca8d802137b",
+          "color": "rgb(184,168,168,1)",
+          "density": null,
+          "filename": "fck_029.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/97514a33273500eb6f6ddca8d802137b.jpg",
+          "protocol": "file",
+          "size": 13517275,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 3734,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 5755,
+          "title": "fck_029",
+          "date": 1678251686000
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "fck_028",
+      "creator": "Megan Kelly",
+      "tag": [
+        "artwork",
+        "auto erotica",
+        "primary image",
+        "drummer"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "658428c76918b30663062379ff9ff08a",
+          "color": "rgb(232,216,232,1)",
+          "density": null,
+          "filename": "fck_028.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/658428c76918b30663062379ff9ff08a.jpg",
+          "protocol": "file",
+          "size": 13187167,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 6000,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 4000,
+          "title": "fck_028",
+          "date": 1678251106000
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "fck_026",
+      "creator": "Megan Kelly",
+      "tag": [
+        "artwork",
+        "auto erotica",
+        "drummer"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "bbe01cbf1a167461b6455411476fe9e0",
+          "color": "rgb(216,216,232,1)",
+          "density": null,
+          "filename": "fck_026.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/bbe01cbf1a167461b6455411476fe9e0.jpg",
+          "protocol": "file",
+          "size": 14045127,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 6000,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 4000,
+          "title": "fck_026",
+          "date": 1678250985000
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "fck_024",
+      "creator": "Megan Kelly",
+      "tag": [
+        "artwork",
+        "auto erotica",
+        "drummer"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "a9456c8a12d176a94006c356c7724999",
+          "color": "rgb(216,200,216,1)",
+          "density": null,
+          "filename": "fck_024.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/a9456c8a12d176a94006c356c7724999.jpg",
+          "protocol": "file",
+          "size": 13656304,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 6000,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 4000,
+          "title": "fck_024",
+          "date": 1678250928000
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "fck_021",
+      "creator": "Megan Kelly",
+      "tag": [
+        "artwork",
+        "chrissa",
+        "flowers bloom"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "9da321201d4ea9c5f3793deee735a283",
+          "color": "rgb(216,200,216,1)",
+          "density": null,
+          "filename": "fck_021.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/9da321201d4ea9c5f3793deee735a283.jpg",
+          "protocol": "file",
+          "size": 14337998,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 6000,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 4000,
+          "title": "fck_021",
+          "date": 1678250471000
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "fck_020",
+      "creator": "Megan Kelly",
+      "tag": [
+        "artwork",
+        "chrissa",
+        "flowers bloom"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "9720c7012e0d55930153f44b9361f8e3",
+          "color": "rgb(216,200,200,1)",
+          "density": null,
+          "filename": "fck_020.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/9720c7012e0d55930153f44b9361f8e3.jpg",
+          "protocol": "file",
+          "size": 13151214,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 6000,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 4000,
+          "title": "fck_020",
+          "date": 1678250396000
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "fck_019",
+      "creator": "Megan Kelly",
+      "tag": [
+        "artwork",
+        "chrissa",
+        "flowers bloom"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "f552845c99fe40ab69c9e8f468053d4d",
+          "color": "rgb(216,216,216,1)",
+          "density": null,
+          "filename": "fck_019.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/f552845c99fe40ab69c9e8f468053d4d.jpg",
+          "protocol": "file",
+          "size": 10578599,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 6000,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 4000,
+          "title": "fck_019",
+          "date": 1678250355000
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "fck_017",
+      "creator": "Megan Kelly",
+      "tag": [
+        "artwork",
+        "auto erotica",
+        "primary image",
+        "fliers"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "3752ff00ecf36445972bc2f0b4877a20",
+          "color": "rgb(216,200,200,1)",
+          "density": null,
+          "filename": "fck_017.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/3752ff00ecf36445972bc2f0b4877a20.jpg",
+          "protocol": "file",
+          "size": 16987705,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 6000,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 4000,
+          "title": "fck_017",
+          "date": 1678249828000
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "fck_015",
+      "creator": "Megan Kelly",
+      "tag": [
+        "artwork",
+        "auto erotica",
+        "fliers"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "9cdb0c3bf277b4eb3554354b554b2cbb",
+          "color": "rgb(232,232,232,1)",
+          "density": null,
+          "filename": "fck_015.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/9cdb0c3bf277b4eb3554354b554b2cbb.jpg",
+          "protocol": "file",
+          "size": 17617811,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 6000,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 4000,
+          "title": "fck_015",
+          "date": 1678249731000
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "fck_014",
+      "creator": "Megan Kelly",
+      "tag": [
+        "artwork",
+        "auto erotica",
+        "fliers"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "d2e1ebfd90a0dfd6bf9a85e30b79bd47",
+          "color": "rgb(216,200,200,1)",
+          "density": null,
+          "filename": "fck_014.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/d2e1ebfd90a0dfd6bf9a85e30b79bd47.jpg",
+          "protocol": "file",
+          "size": 17232867,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 6000,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 4000,
+          "title": "fck_014",
+          "date": 1678249660000
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "fck_013",
+      "creator": "Megan Kelly",
+      "tag": [
+        "artwork",
+        "auto erotica",
+        "fliers"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "33b2af0382538b1983acb559586ccfde",
+          "color": "rgb(216,200,200,1)",
+          "density": null,
+          "filename": "fck_013.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/33b2af0382538b1983acb559586ccfde.jpg",
+          "protocol": "file",
+          "size": 17538690,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 6000,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 4000,
+          "title": "fck_013",
+          "date": 1678249640000
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "fck_012",
+      "creator": "Megan Kelly",
+      "tag": [
+        "artwork",
+        "auto erotica",
+        "fliers"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "66cbda8376cc18bec189d9aaa9d02e0b",
+          "color": "rgb(232,216,216,1)",
+          "density": null,
+          "filename": "fck_012.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/66cbda8376cc18bec189d9aaa9d02e0b.jpg",
+          "protocol": "file",
+          "size": 16222407,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 6000,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 4000,
+          "title": "fck_012",
+          "date": 1678249539000
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "fck_011",
+      "creator": "Megan Kelly",
+      "tag": [
+        "artwork",
+        "auto erotica",
+        "fliers"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "aadc4b357a08c525b7b923d81c263064",
+          "color": "rgb(216,200,200,1)",
+          "density": null,
+          "filename": "fck_011.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/aadc4b357a08c525b7b923d81c263064.jpg",
+          "protocol": "file",
+          "size": 15979493,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 4000,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 6000,
+          "title": "fck_011",
+          "date": 1678249501000
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "fck_010",
+      "creator": "Megan Kelly",
+      "tag": [
+        "artwork",
+        "auto erotica",
+        "fliers"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "4d57d872450343bae8e70fe733de273e",
+          "color": "rgb(216,200,200,1)",
+          "density": null,
+          "filename": "fck_010.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/4d57d872450343bae8e70fe733de273e.jpg",
+          "protocol": "file",
+          "size": 13760861,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 4000,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 6000,
+          "title": "fck_010",
+          "date": 1678249471000
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "fck_009",
+      "creator": "Megan Kelly",
+      "tag": [
+        "artwork",
+        "chrissa",
+        "superfam",
+        "primary image"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "8fe50d2d8768aebbf2de006bb98bf2b3",
+          "color": "rgb(232,216,216,1)",
+          "density": null,
+          "filename": "fck_009.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/8fe50d2d8768aebbf2de006bb98bf2b3.jpg",
+          "protocol": "file",
+          "size": 10692649,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 6000,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 4000,
+          "title": "fck_009",
+          "date": 1678249377000
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "fck_008",
+      "creator": "Megan Kelly",
+      "tag": [
+        "artwork",
+        "chrissa",
+        "superfam"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "65357d2682d8d28f5198b3dfdf5c80b9",
+          "color": "rgb(232,232,232,1)",
+          "density": null,
+          "filename": "fck_008.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/65357d2682d8d28f5198b3dfdf5c80b9.jpg",
+          "protocol": "file",
+          "size": 15665647,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 4000,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 6000,
+          "title": "fck_008",
+          "date": 1678249334000
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "fck_007",
+      "creator": "Megan Kelly",
+      "tag": [
+        "artwork",
+        "chrissa",
+        "superfam"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "c816414ce2bcb4bab271c9214231d79b",
+          "color": "rgb(200,200,200,1)",
+          "density": null,
+          "filename": "fck_007.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/c816414ce2bcb4bab271c9214231d79b.jpg",
+          "protocol": "file",
+          "size": 13283659,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 4000,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 6000,
+          "title": "fck_007",
+          "date": 1678249323000
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "fck_006",
+      "creator": "Megan Kelly",
+      "tag": [
+        "artwork",
+        "chrissa",
+        "safeword"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "c9e16e75c7f57f1dc0a89f3ece4e55dc",
+          "color": "rgb(216,200,200,1)",
+          "density": null,
+          "filename": "fck_006.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/c9e16e75c7f57f1dc0a89f3ece4e55dc.jpg",
+          "protocol": "file",
+          "size": 11265724,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 6000,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 4000,
+          "title": "fck_006",
+          "date": 1678249225000
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "fck_005",
+      "creator": "Megan Kelly",
+      "tag": [
+        "artwork",
+        "chrissa",
+        "safeword"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "7a9f9034e843f00ea2d8bf4e01cb416c",
+          "color": "rgb(216,216,216,1)",
+          "density": null,
+          "filename": "fck_005.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/7a9f9034e843f00ea2d8bf4e01cb416c.jpg",
+          "protocol": "file",
+          "size": 10587424,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 6000,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 4000,
+          "title": "fck_005",
+          "date": 1678249204000
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "fck_004",
+      "creator": "Megan Kelly",
+      "tag": [
+        "artwork",
+        "chrissa",
+        "safeword",
+        "primary image"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "90edf527cd2102dbe17a8c3ab304c63c",
+          "color": "rgb(216,216,216,1)",
+          "density": null,
+          "filename": "fck_004.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/90edf527cd2102dbe17a8c3ab304c63c.jpg",
+          "protocol": "file",
+          "size": 10878012,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 6000,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 4000,
+          "title": "fck_004",
+          "date": 1678249183000
+        }
+      ]
+    },
+    {
+      "@type": "Item",
+      "template": "https://tropy.org/v1/templates/generic",
+      "title": "fck_001",
+      "creator": "Megan Kelly",
+      "tag": [
+        "artwork",
+        "auto erotica",
+        "bulldog baths"
+      ],
+      "photo": [
+        {
+          "@type": "Photo",
+          "checksum": "f1e55dcac52f488eb803fd0e1219d3a9",
+          "color": "rgb(216,216,216,1)",
+          "density": null,
+          "filename": "fck_001.jpg",
+          "mimetype": "image/jpeg",
+          "orientation": 1,
+          "page": 0,
+          "path": "/Users/joellithgow/Desktop/fuckexhibition.tropy/assets/f1e55dcac52f488eb803fd0e1219d3a9.jpg",
+          "protocol": "file",
+          "size": 11329316,
+          "template": "https://tropy.org/v1/templates/photo",
+          "angle": 0,
+          "brightness": 0,
+          "contrast": 0,
+          "height": 6000,
+          "hue": 0,
+          "mirror": false,
+          "negative": false,
+          "saturation": 0,
+          "sharpen": 0,
+          "width": 4000,
+          "title": "fck_001",
+          "date": 1678249010000
+        }
+      ]
+    }
+  ],
+  "version": "1.13.0"
+}
