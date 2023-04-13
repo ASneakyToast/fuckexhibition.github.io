@@ -154,7 +154,7 @@ let openingPhotos = images.filter( item => {
   }
   #Artwork .images img {
     display: inline-block;
-    max-width: 200px;
+    max-width: 230px;
     max-height: 80vh;
     padding: 0 16px 16px 0;
   }
@@ -162,6 +162,7 @@ let openingPhotos = images.filter( item => {
     cursor: pointer;
   }
 
+  /* Reception, Tablet + */
   #Reception .images {
     columns: 3;
     gap: 8px;
@@ -171,6 +172,12 @@ let openingPhotos = images.filter( item => {
   }
   #Reception .images img:hover {
     cursor: pointer;
+  }
+  /* Reception, Mobile-Tablet */
+  @media only screen and (max-width: 768px) {
+    #Reception .images {
+      columns: 2;
+    }
   }
 
 </style>
@@ -189,7 +196,6 @@ let openingPhotos = images.filter( item => {
     let artworkName = artworkData.tag.filter( tag => {
       return ![ "artwork", "auto erotica", "chrissa", "primary image" ].includes( tag );
     });
-
     let artistName = artworkData.tag.filter( tag => {
       return ![ "artwork", "primary image", "safeword", "superfam", "fliers", "drummer", "flowers bloom" ].includes( tag );
     });
@@ -246,10 +252,12 @@ let openingPhotos = images.filter( item => {
   /* EXHIBITION QUICKVIEW OPEN */
   function openExhibitionQuickview( srcElement ) {
 
+    const exhibitionSrc = srcElement.target.attributes.src.value.replace(/\s+/g, "%20"); //format string to change whitespaces
+
     const exhibitionQuickviewElement = document.createElement( "div" );
     exhibitionQuickviewElement.classList.add( "exhibition-quickview" );
     exhibitionQuickviewElement.innerHTML = `
-      <img src=${ srcElement.target.attributes.src.value } />
+      <img src=${ exhibitionSrc } />
       <p>Exhibition photo</p>
     `
     exhibitionQuickviewElement.addEventListener( "click", () => {

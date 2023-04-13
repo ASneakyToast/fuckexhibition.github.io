@@ -115,6 +115,7 @@ const { title } = Astro.props;
     margin-top: 16px;
   }
 
+  /* Artwork Quickview, Tablet + */
   .artwork-quickview {
     position: fixed;
     top: 0;
@@ -140,6 +141,16 @@ const { title } = Astro.props;
     align-self: end;
   }
 
+  /* Artwork Quickview, Mobile-Tablet */
+  @media only screen and (max-width: 768px) {
+    .artwork-quickview {
+      flex-direction: column;
+    }
+    .artwork-quickview aside {
+      align-self: start;
+    }
+  }
+
   .reception-quickview {
     position: fixed;
     top: 0;
@@ -156,8 +167,8 @@ const { title } = Astro.props;
   }
   .reception-quickview img {
     max-height: 100%;
+    max-width: 100%;
     object-fit: contain;
-    margin-left: 16px;
   }
   .reception-quickview p {
     display: inline-block;
@@ -180,8 +191,8 @@ const { title } = Astro.props;
   }
   .exhibition-quickview img {
     max-height: 100%;
+    max-width: 100%;
     object-fit: contain;
-    margin-left: 16px;
   }
   .exhibition-quickview p {
     display: inline-block;
