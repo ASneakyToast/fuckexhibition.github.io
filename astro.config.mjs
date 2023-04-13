@@ -1,9 +1,7 @@
 import { defineConfig } from 'astro/config';
 
-// https://astro.build/config
-
 export default defineConfig({
-  site: "https://ASneakyToast.github.io",
-  outDir: "../dist"
-  // base: "/fuckexhibition",
+  site: "https://fuck-exhibition.com",
+  // base: "/fuckexhibition.github.io",
+  outDir: "../dist",
 });
