@@ -1,9 +1,47 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-
-import Header from "../components/Header.astro";
 ---
 <BaseLayout title="FUCK">
-  <h1>FU*K Exhibition</h1>
-  <p>Home page</p>
+  <section class="quicklinks">
+    <a href="/photos"><p>Photos</p></a>
+    <a href="/catalog"><p>Catalog</p></a>
+    <a href="/about"><p>About</p></a>
+    <a href="/press"><p>Press</p></a>
+    <a href="/resources"><p>Resources</p></a>
+  </section>
+  <hr></hr>
+  <p>Joel Lithgow & Samantha Hiura | 2023</p>
 </BaseLayout>
+
+<style scope>
+  :global(.page-content) {
+    max-width: 420px;
+  }
+  p {
+    text-align: center !important;
+  }
+  .quicklinks {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 32px;
+  }
+  .quicklinks a {
+    width: 100%;
+    color: #222;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 2rem;
+    border-radius: 128px;
+    cursor: pointer;
+  }
+  .quicklinks p {
+    margin: 24px 32px;
+  }
+
+  hr {
+    border: 1px solid pink;
+    opacity: 20%;
+    margin: 64px 0;
+  }
+</style>
