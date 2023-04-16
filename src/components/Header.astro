@@ -4,6 +4,7 @@
   <section class="logo">
     <a href="/">
       <img src="/graphics/fuck-logo.jpg" alt="FUCK"/>
+      <p aria-hidden="true">F*CK! | EXH.</p>
     </a>
   </section>
   <section class="link-items">
@@ -47,13 +48,14 @@
   .logo {
     flex: 1;
   }
-
   .logo > a {
     display: inline-block;
   }
-
   .logo img {
     height: 30px;
+  }
+  .logo p {
+    display: none;
   }
 
   .link-items {

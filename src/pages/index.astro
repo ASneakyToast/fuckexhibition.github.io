@@ -2,6 +2,11 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 <BaseLayout title="FUCK">
+  <section class="animated-logo">
+    <img class="fill" src="/graphics/fuck-logo-fill.svg" />
+    <!-- <img class="outline" src="/graphics/fuck-logo-outline.svg" /> -->
+    <img class="base" src="/graphics/fuck-logo-base.svg" />
+  </section>
   <section class="quicklinks">
     <a href="/photos"><p>Photos</p></a>
     <a href="/catalog"><p>Catalog</p></a>
@@ -17,6 +22,56 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   :global(.page-content) {
     max-width: 420px;
   }
+
+  :global(#top-navigation .logo img) {
+    display: none;
+  }
+  :global(#top-navigation .logo p) {
+    display: inline-block;
+  }
+
+  @keyframes glitch {
+    0% {
+      transform: translate(0)
+    }
+    20% {
+      transform: translate(-1px, 1px)
+    }
+    40% {
+      transform: translate(-1px, -1px)
+    }
+    60% {
+      transform: translate(1px, 1px)
+    }
+    80% {
+      transform: translate(1px, -1px)
+    }
+    to {
+      transform: translate(0)
+    }
+  }
+  .animated-logo {
+    position: relative;
+  }
+  .animated-logo img {
+  }
+  .animated-logo .fill {
+    position: absolute;
+    fill: red;
+    max-width: 95%;
+    top: 8px;
+    right: 6px;
+    opacity: 60%;
+    animation: glitch .3s cubic-bezier(.25, .46, .45, .94) both infinite;
+  }
+  .animated-logo .fill:hover {
+    animation: glitch 1s cubic-bezier(.25, .46, .45, .94) both infinite;
+  }
+  .animated-logo .base {
+    max-width: 100%;
+  }
+
+  /* Quicklinks */
   p {
     text-align: center !important;
   }
@@ -39,6 +94,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     margin: 24px 32px;
   }
 
+  /* Footer */
   hr {
     border: 1px solid pink;
     opacity: 20%;
