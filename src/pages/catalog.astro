@@ -30,6 +30,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 </BaseLayout>
 
 <style scoped>
+  .contents-preview {
+    padding-left: 24px; 
+    border-left: 1px solid #f5e1ef;
+  }
   .contents-preview h2 {
     text-align: left;
   }
@@ -44,21 +48,14 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     margin-top: 8px;
     font-size: .8rem;
   }
+
   .download button {
-    color: black;
-    background-color: pink;
+    background-color: #f5e1ef;
     padding: 8px 16px;
-    border-radius: 32px;
-    border: 1px solid lightpink;
-    filter: drop-shadow( -2px 4px 0 rgba(0,0,0,1));
-    margin-bottom: 8px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: all 200ms;
   }
   .download button:hover {
-    color: white;
-    background-color: deeppink;
-    border: 1px solid deeppink;
-    filter: drop-shadow( -3px 6px 0 rgba(0,0,0,1));
+    border: 2px solid deeppink;
   }
 </style>

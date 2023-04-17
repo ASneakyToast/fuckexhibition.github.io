@@ -197,7 +197,7 @@ let openingPhotos = images.filter( item => {
       return ![ "artwork", "auto erotica", "chrissa", "primary image" ].includes( tag );
     });
     let artistName = artworkData.tag.filter( tag => {
-      return ![ "artwork", "primary image", "safeword", "superfam", "fliers", "drummer", "flowers bloom" ].includes( tag );
+      return ![ "artwork", "primary image", "safeword", "bulldog baths", "superfam", "fliers", "drummer", "flowers bloom" ].includes( tag );
     });
 
     /* set extra description... */
@@ -211,14 +211,14 @@ let openingPhotos = images.filter( item => {
       `;
     } else if ( artistName == "chrissa" && artworkName == "superfam" ) {
       artworkMetadata.innerHTML = `
-        <h2>Chrissa Chovart</h2>
-        <h3>SUPERFAM</h3>
-        <h4>(The Truth Is Stranger Than Fiction 1 of 3), 50”x6’, printed panel.</h4>
+        <h2>Chrissa Chorvat</h2>
+        <h3>SUPERFAM (The Truth Is Stranger Than Fiction 1 of 3)</h3>
+        <h4>50”x6’, printed panel.</h4>
         <h5>photo credit: ${ artworkData.creator }</h5>
       `;
     } else if ( artistName == "chrissa" && artworkName == "flowers bloom" ) {
       artworkMetadata.innerHTML = `
-        <h2>Chrissa Chovart</h2>
+        <h2>Chrissa Chorvat</h2>
         <h3>The Flowers Bloom Where you Have Placed Them, and the Lady Smiles. Just Like Mom</h3>
         <h4>27” x 15”x10”, PVC, steel, vibrators, rubber.</h4>
         <h5>photo credit: ${ artworkData.creator }</h5>
@@ -233,10 +233,18 @@ let openingPhotos = images.filter( item => {
     } else if ( artistName == "auto erotica" && artworkName == "drummer" ) {
       artworkMetadata.innerHTML = `
         <h2>Auto Erotica</h2>
+        <h3><i>Drummer</i> magazine</h3>
+        <h4>(1989), 8.5”x11”, paper</h4>
+        <h5>photo credit: ${ artworkData.creator }</h5>
+        <p><i>Drummer</i> was a magazine based in San Francisco focusing on queer subculture, running from 1975-1999 and recently relaunched in 2019. It specifically explored and celebrated leather, rubber wear, and BDSM culture, techniques, writing, and products. It was culturally significant for spreading mainstream awareness to these subcultures, and challenged ideas of masculinity in the LGBTQ+ community.</p>
+      `;
+    } else if ( artistName == "auto erotica" && artworkName == "bulldog baths" ) {
+      artworkMetadata.innerHTML = `
+        <h2>Auto Erotica</h2>
         <h3>Bulldog Baths (facsimile poster)</h3>
         <h4>Printed by But Whole Press, provided by Auto Erotica, (2022), 11” x 17”, paper, ink.</h4>
         <h5>photo credit: ${ artworkData.creator }</h5>
-        <p>Drummer was a magazine based in San Francisco focusing on queer subculture, running from 1975-1999 and recently relaunched in 2019. It specifically explored and celebrated leather, rubber wear, and BDSM culture, techniques, writing, and products. It was culturally significant for spreading mainstream awareness to these subcultures, and challenged ideas of masculinity in the LGBTQ+ community.</p>
+        <p>The Bulldog Baths was a historic gay bathhouse in San Francisco. During the onset of the AIDS epidemic, there was a city-wide prohibition on bathhouses in San Francisco. Since then, bath houses have gone through various changes in their form and location as a result of changing legal restrictions. As a result of a recent zoning decision, bathhouses are now allowed in certain San Francisco districts. The bathhouse Eros now stands in the location of the historic Bulldog Baths (132 Turk St, San Francisco, CA).</p>
       `;
     }
     console.log( artworkMetadata );

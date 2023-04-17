@@ -45,8 +45,20 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 </BaseLayout>
 
 <style scoped>
+  .resource-list {
+    padding-inline-start: 0 !important;
+  }
   .resource-list li {
     margin-bottom: 24px;
+    list-style: none;
+  }
+
+  .resource-list a {
+    color: black;
+  }
+
+  .resource-list a:hover {
+    color: deeppink;
   }
 
   .resource-list p {
