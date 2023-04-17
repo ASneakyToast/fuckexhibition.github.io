@@ -2,11 +2,16 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 <BaseLayout title="FUCK">
-  <section class="animated-logo">
-    <img class="fill" src="/graphics/fuck-logo-fill.svg" />
-    <!-- <img class="outline" src="/graphics/fuck-logo-outline.svg" /> -->
-    <img class="base" src="/graphics/fuck-logo-base.svg" />
+  <section id="landing-graphic">
+    <!-- <img src="fucktexture.jpg" /> -->
+
+    <section class="animated-logo">
+      <img class="fill" src="/graphics/fuck-logo-fill.svg" />
+      <img class="base" src="/graphics/fuck-logo-base.svg" />
+    </section>
   </section>
+
+  <!--
   <section class="quicklinks">
     <a href="/photos"><p>Photos</p></a>
     <a href="/catalog"><p>Catalog</p></a>
@@ -14,13 +19,19 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     <a href="/press"><p>Press</p></a>
     <a href="/resources"><p>Resources</p></a>
   </section>
+  -->
+
   <hr></hr>
+
   <p>Joel Lithgow & Samantha Hiura | 2023</p>
 </BaseLayout>
 
 <style scope>
   :global(.page-content) {
-    max-width: 420px;
+    /* max-width: 420px; */
+    max-width: 100%;
+    padding: 0;
+    padding-bottom: 16px;
   }
 
   :global(#top-navigation .logo img) {
@@ -50,54 +61,43 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       transform: translate(0)
     }
   }
+
+  #landing-graphic {
+    position: relative;
+    background-image: url("/fucktexture.jpg");
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  #landing-graphic img {
+    width: 100%;
+  }
+
   .animated-logo {
     position: relative;
-  }
-  .animated-logo img {
+    margin: 32px auto 48px auto;
+    width: 90%;
   }
   .animated-logo .fill {
     position: absolute;
     fill: red;
     max-width: 95%;
-    top: 8px;
-    right: 6px;
+    top: 6%;
+    right: 1.5%;
     opacity: 60%;
     animation: glitch .3s cubic-bezier(.25, .46, .45, .94) both infinite;
   }
-  .animated-logo .fill:hover {
-    animation: glitch 1s cubic-bezier(.25, .46, .45, .94) both infinite;
-  }
   .animated-logo .base {
     max-width: 100%;
-  }
-
-  /* Quicklinks */
-  p {
-    text-align: center !important;
-  }
-  .quicklinks {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    padding-top: 32px;
-  }
-  .quicklinks a {
-    width: 100%;
-    color: #222;
-    text-decoration: none;
-    font-weight: bolder;
-    font-size: 2rem;
-    border-radius: 128px;
-    cursor: pointer;
-  }
-  .quicklinks p {
-    margin: 24px 32px;
   }
 
   /* Footer */
   hr {
     border: 1px solid pink;
     opacity: 20%;
-    margin: 64px 0;
+    margin: 64px;
   }
 </style>
