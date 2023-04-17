@@ -13,14 +13,22 @@
     <a href="/about"><p>About</p></a>
     <a href="/press"><p>Press</p></a>
     <a href="/resources"><p>Resources</p></a>
-    <aside class="hamburger-menu">
+    <aside class="hamburger-menu__button">
       <a href="/"><p>Menu</p></a>
     </aside>
   </section>
-  <!--
-  <section class="hamburger-menu">
+
+  <section class="hamburger-menu__drawer">
+    <a href="/photos"><p>Photos</p></a>
+    <a href="/catalog"><p>Catalog</p></a>
+    <a href="/about"><p>About</p></a>
+    <a href="/press"><p>Press</p></a>
+    <a href="/resources"><p>Resources</p></a>
+
+    <aside>
+      <p class="hamburger-menu__close-button">close</p>
+    </aside>
   </section>
-  -->
 </div>
 
 <style scoped>
@@ -72,13 +80,44 @@
     }
   }
 
-  .hamburger-menu {
+  .hamburger-menu__button, .hamburger-menu__drawer {
     display: none;
+  }
+
+  .hamburger-menu__drawer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fffbfc;
+    gap: 64px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+  }
+
+  .hamburger-menu__drawer > a > p {
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .hamburger-menu__close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 24px;
+    padding: 24px;
+  }
+
+  .hamburger-menu__drawer--open {
+    display: flex;
   }
 
   /* Tablet and larger */
   @media only screen and (max-width: 678px) {
-    .hamburger-menu {
+    .hamburger-menu__button {
       display: inline-block;
     }
   }
@@ -86,6 +125,15 @@
 </style>
 
 <script>
-
-
+  const menuDrawer = document.querySelector(".hamburger-menu__drawer");
+  const menuButton = document.querySelector(".hamburger-menu__button");
+  const menuClose = document.querySelector(".hamburger-menu__close-button");
+  menuButton.addEventListener("click", () => {
+    menuDrawer.classList.toggle("hamburger-menu__drawer--open");
+    event.preventDefault();
+  });
+  menuClose.addEventListener("click", () => {
+    menuDrawer.classList.toggle("hamburger-menu__drawer--open");
+    event.preventDefault();
+  });
 </script>
