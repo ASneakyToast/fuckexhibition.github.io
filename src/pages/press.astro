@@ -6,12 +6,43 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     <h1>Press</h1>
     <img src="/graphics/press-text_graphic.png" />
   </section>
-  <h2>Coming soon!</h2>
+
+  <section class="content">
+    <article>
+      <h4>Jun 01, 2023</h4>
+      <a target="_blank" href="https://portal.cca.edu/essentials/exhibitions/rewind-review-respond/#fck-at-cca-playspace-centering-queer-sexualities">
+        <h3>RRR: F*CK! at CCA PLAySPACE: Centering Queer Sexualities</h3>
+      </a>
+      <h5>By Emilia Shaffer-Del Valle</h5>
+      <p>"I think when you engage in conversation on issues having to do with social consciousness and historically marginalized communities, engaging with multiplicity is not just important– it’s imperative. Without actively including multiple perspectives and multiple ideas, you not only stunt the possibilities of your own project, but you also risk framing those ideas or experiences as a monolith. I think it’s more than basic curatorial practice; it’s a gesture of care."<p>
+    </article>
+  </section>
   <!-- Playspace instagram? | Maybe link to instagram posts -->
 </BaseLayout>
 
-<style>
+<style scope>
   .intro {
     margin-bottom: 32px;
+  }
+
+  .content a {
+    color: #222222;
+  }
+  .content a:hover {
+    color: deeppink;
+  }
+
+  .content article {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    border-left: 1px solid #f5e1ef;
+    padding-left: 24px; 
+  }
+
+  .content article p {
+    /* padding-top: 8px; */
+    margin-bottom: 0;
   }
 </style>
